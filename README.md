@@ -45,9 +45,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
-[x] -Adding javascript and jquery
-[x] -Testing to see if javascript and jquery are working
-[ ] -Creating a new pattern
+- [x]Adding javascript and jquery
+- [x]Testing to see if javascript and jquery are working
+- [ ] -Creating a new pattern
 
 ### Built with
 
