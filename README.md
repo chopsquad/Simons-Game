@@ -1,6 +1,6 @@
 # Simon`s Game
 
-This is webpage game, based off the very popular "Simon`s Game" Simon`s Game is an electronic game of memory skill. In the game you have four different colors and each color makes a different sound. The user is required to repeat the sequence. If the sequence is done correctly then the series becomes harder and harder, until the user fails or time runs out and the game is over.
+This is webpage game, based off the very popular "Simons Game" Simon`s Game is an electronic game of memory skill. In the game you have four different colors and each color makes a different sound. The user is required to repeat the sequence. If the sequence is done correctly then the series becomes harder and harder, until the user fails or time runs out and the game is over.
 
 ## Table of contents
 
@@ -45,16 +45,17 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+[x] -Adding javascript and jquery
+[x] -Testing to see if javascript and jquery are working
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+-
+- [Jquery](https://code.jquery.com/) - JS library
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -62,10 +63,12 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
+-Adding jquery to out html file, must be added before the js file
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="script.js"></script>
 ```
 
 ```css
@@ -92,7 +95,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Jquery google link](https://developers.google.com/speed/libraries) - This helped me find the latest JQuery hosted library on google. I then used this script in the html file.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
