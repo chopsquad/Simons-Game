@@ -47,6 +47,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 [x] -Adding javascript and jquery
 [x] -Testing to see if javascript and jquery are working
+[ ] -Creating a new pattern
 
 ### Built with
 
@@ -71,9 +72,13 @@ Use this section to recap over some of your major learnings while working throug
 <script src="script.js"></script>
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
+- How to select a specific element using JQuery
+
+```js
+$("element") //selects all of the elements
+$("element.class") //selects only the ones with the specified class
+$("element#id")// only with the specified ID
+
 }
 ```
 
