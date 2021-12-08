@@ -24,7 +24,10 @@ This is webpage game, based off the very popular "Simons Game" Simon`s Game is a
 
 Users should be able to:
 
-- See hover states for interactive elements
+- See 4 different color boxes.
+- Should be able to clicks each box.
+- Should be able to visually see which boxes are lighting up.
+- Should be able to click and reproduce the random order generated.
 
 ### Screenshot
 
@@ -40,8 +43,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/chopsquad/Simons-Game](https://github.com/chopsquad/Simons-Game)
+- Live Site URL: [https://chopsquad.github.io/Simons-Game/](https://chopsquad.github.io/Simons-Game/)
 
 ## My process
 
