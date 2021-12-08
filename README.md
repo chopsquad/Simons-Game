@@ -47,7 +47,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - [x]Adding javascript and jquery
 - [x]Testing to see if javascript and jquery are working
-- [ ]Creating a new pattern
+- [x]Creating a new pattern of colors a random number
+- [x]Add flash to the selected color
+- [x]Add sound to selected color
 
 ### Built with
 
