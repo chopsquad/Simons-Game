@@ -90,6 +90,15 @@ $("element").fadeOut(100).fadeOut(100).fadeIn(100).fadeOut(100);
 };
 ```
 
+-playing an audio element
+
+```js
+let audio = new Audio("source of audio")
+audio.play();
+//this could later give us problems but for now this was the easiest method
+};
+```
+
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 **Note: Delete this note and the content within this section and replace with your own learnings.**
@@ -104,6 +113,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Jquery google link](https://developers.google.com/speed/libraries) - This helped me find the latest JQuery hosted library on google. I then used this script in the html file.
 - [Adding a flash effect with JQuery](https://stackoverflow.com/questions/275931/how-do-you-make-an-element-flash-in-jquery) - Here i learned a lot about different ways to add a flash effect on the element you have selected.
+- [laying Audio](https://stackoverflow.com/questions/9419263/how-to-play-audio) - I learned how to implement audio. Then be able to play it.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

@@ -26,4 +26,8 @@ gamePattern.push(randomChosenColor);
 //selecting the button with the same id as our randomly generated color
 console.log($(`div#${randomChosenColor}`));
 //making this element flash
-$(`div#${randomChosenColor}`).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+$(`div#${randomChosenColor}`).fadeOut(100).fadeIn(100).fadeOut(100).fad;
+
+//playing audio depending on the chose color
+let audio = new Audio(`sounds/${randomChosenColor}.mp3`);
+//audio.play();
