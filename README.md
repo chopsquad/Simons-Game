@@ -49,10 +49,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [x] Testing to see if javascript and jquery are working
 - [x] Creating a new pattern of colors a random number
 - [x] Add flash to the selected color
-- [ ] Check if any of the buttons are being clicked and trigger a handler function
-- [ ] Handler function should create a new variable, to store the id of the button that got clicked
-- [ ] At the top create an empty array called `userClickedPattern`
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
+- [x] Check if any of the buttons are being clicked and trigger a handler function
+- [x] Handler function should create a new variable, to store the id of the button that got clicked
+- [x] At the top create an empty array called `userClickedPattern`
+- [x] Add contents of `userChosenColour` and `userClickedPattern`
 
 ### Built with
 
@@ -97,6 +97,13 @@ $("element").fadeOut(100).fadeOut(100).fadeIn(100).fadeOut(100);
 
 -playing an audio element
 
+```js
+let audio = new Audio("source of audio")
+audio.play();
+//this could later give us problems but for now this was the easiest method
+};
+```
+-adding a click event that tracks what button is being pressed and stores it into an array.
 ```js
 let audio = new Audio("source of audio")
 audio.play();

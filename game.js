@@ -7,6 +7,8 @@
 // });
 
 //
+let userClickedPattern = [];
+//
 let gamePattern = [];
 // and array that holds different colors
 const buttonColours = ["red", "blue", "green", "yellow"];
@@ -26,8 +28,19 @@ gamePattern.push(randomChosenColor);
 //selecting the button with the same id as our randomly generated color
 console.log($(`div#${randomChosenColor}`));
 //making this element flash
-$(`div#${randomChosenColor}`).fadeOut(100).fadeIn(100).fadeOut(100).fad;
+$(`div#${randomChosenColor}`).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 
 //playing audio depending on the chose color
 let audio = new Audio(`sounds/${randomChosenColor}.mp3`);
-//audio.play();
+audio.muted = false;
+audio.play();
+
+//detect which button is being clicked
+$("div.btn").on("click", function (event) {
+  //console.log(event.target.id);
+  //variable that stores the id of the clicked element
+  let userChosenColour = event.target.id;
+  console.log(userChosenColour);
+  //add the id to end of the pattern array
+  userClickedPattern.push(userChosenColour);
+});
