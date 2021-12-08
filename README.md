@@ -47,7 +47,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - [x]Adding javascript and jquery
 - [x]Testing to see if javascript and jquery are working
-- [ ] -Creating a new pattern
+- [ ]Creating a new pattern
 
 ### Built with
 
@@ -82,9 +82,11 @@ $("element#id")// only with the specified ID
 }
 ```
 
+- How to add a flash effect to a selected elements
+
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
+$("element").fadeOut(100).fadeOut(100).fadeIn(100).fadeOut(100);
+//this could later give us problems but for now this was the easiest method
 };
 ```
 
@@ -101,7 +103,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [Jquery google link](https://developers.google.com/speed/libraries) - This helped me find the latest JQuery hosted library on google. I then used this script in the html file.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Adding a flash effect with JQuery](https://stackoverflow.com/questions/275931/how-do-you-make-an-element-flash-in-jquery) - Here i learned a lot about different ways to add a flash effect on the element you have selected.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
