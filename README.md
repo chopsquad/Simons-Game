@@ -88,36 +88,43 @@ Use this section to recap over some of your major learnings while working throug
 - How to select a specific element using JQuery
 
 ```js
-$("element") //selects all of the elements
-$("element.class") //selects only the ones with the specified class
-$("element#id")// only with the specified ID
-
-}
+$("element"); //selects all of the elements
+$("element.class"); //selects only the ones with the specified class
+$("element#id"); // only with the specified ID
 ```
 
 - How to add a flash effect to a selected elements
 
 ```js
+//this is using JQuery
 $("element").fadeOut(100).fadeOut(100).fadeIn(100).fadeOut(100);
 //this could later give us problems but for now this was the easiest method
-};
 ```
 
 -playing an audio element
 
 ```js
-let audio = new Audio("source of audio")
+let audio = new Audio("source of audio");
 audio.play();
-//this could later give us problems but for now this was the easiest method
-};
 ```
 
 -adding a click event that tracks what button is being pressed and stores it into an array.
 
 ```js
-let audio = new Audio("source of audio")
-audio.play();
-//this could later give us problems but for now this was the easiest method
+//this is using JQuery
+$("element").on("click", function () {
+  let audio = new Audio("source of audio");
+  audio.play();
+});
+```
+
+- Refactoring play sound for it to be more usable, meaning turning into a function because it is repeating code.
+
+```js
+//this is using JQuery
+function(name){
+  let audio = new Audio(`${name}.mp3`);
+  audio.play();
 };
 ```
 

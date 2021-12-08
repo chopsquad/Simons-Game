@@ -32,11 +32,10 @@ function nextSequence() {
     .fadeIn(100);
 
   //playing audio depending on the chose color
-  let audio = new Audio(`sounds/${randomChosenColor}.mp3`);
-  audio.play();
+  playSound(randomChosenColor);
 }
 
-//detect which button is being clicked
+//detect which button is being clicked and plays sound depending on the color
 $("div.btn").on("click", function (event) {
   //console.log(event.target.id);
   //variable that stores the id of the clicked element
@@ -45,9 +44,12 @@ $("div.btn").on("click", function (event) {
   //add the id to end of the pattern array
   userClickedPattern.push(userChosenColour);
   //sound to be played when user clicks the color
-  let audio = new Audio(`sounds/${userChosenColour}.mp3`);
-  audio.play();
+  playSound(userChosenColour);
 });
 
-// a function called playSound() with one parameter ; name
-function playSound(name) {}
+// when called playSound() plays the sound corresponding to the name parameter
+function playSound(name) {
+  //playing audio depending on the chose color
+  let audio = new Audio(`sounds/${name}.mp3`);
+  audio.play();
+}
