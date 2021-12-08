@@ -50,8 +50,13 @@ Users should be able to:
 - [x] Add contents of `userChosenColour` and `userClickedPattern`.
 - [x] When a user clicks on a button the corresponding sound should play.
 - [x] Create a function called `playSound()` that takes a singe input called name.
-- [ ] Take the code used to ply sound and move it into `playSound`.
-- [ ] Refractor the code in `playSound()` so that it will work for both in `nextSequence()` and when the user clicks a button.
+- [x] Take the code used to ply sound and move it into `playSound`.
+- [x] Refractor the code in `playSound()` so that it will work for both in `nextSequence()` and when the user clicks a button.
+- [x] Create a function called `animatePress()` that takes in a single parameter called `currentColor`.
+- [ ] Add the class `.pressed` to the button that is being clicked.
+- [x] Use javascript to removed the pressed button after 100 milliseconds.
+- [ ] Add contents of `userChosenColour` and `userClickedPattern`
+- [ ] Add contents of `userChosenColour` and `userClickedPattern`
 - [ ] Add contents of `userChosenColour` and `userClickedPattern`
 - [ ] Add contents of `userChosenColour` and `userClickedPattern`
 - [ ] Add contents of `userChosenColour` and `userClickedPattern`
@@ -121,6 +126,21 @@ function(name){
   let audio = new Audio(`${name}.mp3`);
   audio.play();
 };
+```
+
+-Adding a class to element and then removing it after a certain amount of time passed
+
+```js
+//this is using JQuery
+function name(color) {
+  //select the color using jQuery
+  $(`div.${color}`).addClass("name of class");
+  //setting a time out for a period of time
+  setTimeout(function () {
+    //select the element again and remove the class use removeClass
+    $(`div.${color}`).removeClass("name of class");
+  });
+}
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.

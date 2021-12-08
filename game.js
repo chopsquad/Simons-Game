@@ -39,12 +39,12 @@ function nextSequence() {
 $("div.btn").on("click", function (event) {
   //console.log(event.target.id);
   //variable that stores the id of the clicked element
-  let userChosenColour = event.target.id;
-  console.log(userChosenColour);
+  let userChosenColor = event.target.id;
+  console.log(userChosenColor);
   //add the id to end of the pattern array
-  userClickedPattern.push(userChosenColour);
+  userClickedPattern.push(userChosenColor);
   //sound to be played when user clicks the color
-  playSound(userChosenColour);
+  playSound(userChosenColor);
 });
 
 // when called playSound() plays the sound corresponding to the name parameter
@@ -52,4 +52,14 @@ function playSound(name) {
   //playing audio depending on the chose color
   let audio = new Audio(`sounds/${name}.mp3`);
   audio.play();
+}
+
+//animates the pressed color
+function animatePress(currentColor) {
+  //add the css pressed to the color
+  $(`div.${currentColor}`).addClass("pressed");
+  //remove a class after 100 milliseconds
+  setTimeout(function () {
+    $(`div.${currentColor}`).removeClass("pressed");
+  }, 100);
 }
