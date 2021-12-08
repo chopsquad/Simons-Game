@@ -44,4 +44,10 @@ $("div.btn").on("click", function (event) {
   console.log(userChosenColour);
   //add the id to end of the pattern array
   userClickedPattern.push(userChosenColour);
+  //sound to be played when user clicks the color
+  let audio = new Audio(`sounds/${userChosenColour}.mp3`);
+  audio.play();
 });
+
+// a function called playSound() with one parameter ; name
+function playSound(name) {}

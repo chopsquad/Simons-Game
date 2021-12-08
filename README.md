@@ -45,14 +45,22 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
-- [x] Adding javascript and jquery
-- [x] Testing to see if javascript and jquery are working
-- [x] Creating a new pattern of colors a random number
-- [x] Add flash to the selected color
-- [x] Check if any of the buttons are being clicked and trigger a handler function
-- [x] Handler function should create a new variable, to store the id of the button that got clicked
-- [x] At the top create an empty array called `userClickedPattern`
-- [x] Add contents of `userChosenColour` and `userClickedPattern`
+- [x] Adding javascript and jquery.
+- [x] Testing to see if javascript and jquery are working.
+- [x] Creating a new pattern of colors a random number.
+- [x] Add flash to the selected color.
+- [x] Check if any of the buttons are being clicked and trigger a handler function.
+- [x] Handler function should create a new variable, to store the id of the button that got clicked.
+- [x] At the top create an empty array called `userClickedPattern`.
+- [x] Add contents of `userChosenColour` and `userClickedPattern`.
+- [x] When a user clicks on a button the corresponding sound should play.
+- [x] Create a function called `playSound()` that takes a singe input called name.
+- [ ] Take the code used to ply sound and move it into `playSound`.
+- [ ] Refractor the code in `playSound()` so that it will work for both in `nextSequence()` and when the user clicks a button.
+- [ ] Add contents of `userChosenColour` and `userClickedPattern`
+- [ ] Add contents of `userChosenColour` and `userClickedPattern`
+- [ ] Add contents of `userChosenColour` and `userClickedPattern`
+- [ ] Add contents of `userChosenColour` and `userClickedPattern`
 
 ### Built with
 
@@ -103,7 +111,9 @@ audio.play();
 //this could later give us problems but for now this was the easiest method
 };
 ```
+
 -adding a click event that tracks what button is being pressed and stores it into an array.
+
 ```js
 let audio = new Audio("source of audio")
 audio.play();
