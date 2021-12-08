@@ -45,6 +45,8 @@ $("div.btn").on("click", function (event) {
   userClickedPattern.push(userChosenColor);
   //sound to be played when user clicks the color
   playSound(userChosenColor);
+  //adds animation to the color
+  animatePress(userChosenColor);
 });
 
 // when called playSound() plays the sound corresponding to the name parameter
