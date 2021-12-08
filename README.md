@@ -49,7 +49,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [x]Testing to see if javascript and jquery are working
 - [x]Creating a new pattern of colors a random number
 - [x]Add flash to the selected color
-- [x]Add sound to selected color
+- [ ]Check if any of the buttons are being clicked and trigger a handler function
+- [ ]Handler function should create a new variable, to store the id of the button that got clicked
+- [ ]At the top create an empty array called `userClickedPattern`
+- [ ]Add contents of `userChosenColour` and `userClickedPattern`
 
 ### Built with
 
