@@ -12,12 +12,16 @@ let userClickedPattern = [];
 let gamePattern = [];
 // and array that holds different colors
 const buttonColours = ["red", "blue", "green", "yellow"];
-
+//keeping track of the levels
+let level = 0;
 //keeping track of the first keyboard press.
 let firstPress = 0;
+
 //detecting when the keyboard has been pressed
 $(document).on("keydown", function (event) {
   console.log(event);
+  //update h1 text to show level when game start and set it to 0;
+  $("h1").text(`Level ${level}`);
   //call nextSequence();
   if (firstPress === 0) {
     nextSequence();
@@ -45,6 +49,12 @@ function nextSequence() {
 
   //playing audio depending on the chose color
   playSound(randomChosenColor);
+
+  //update the level on the h1
+  $("h1").text(`Level ${level}`);
+
+  //increasing level by one
+  level++;
 }
 
 //detect which button is being clicked and plays sound depending on the color
