@@ -69,6 +69,10 @@ $("div.btn").on("click", function (event) {
   playSound(userChosenColor);
   //adds animation to the color
   animatePress(userChosenColor);
+  //index of the last answer
+  let lastAnswer = userClickedPattern.length - 1;
+  //call check answer
+  checkAnswer(lastAnswer);
 });
 
 // when called playSound() plays the sound corresponding to the name parameter
@@ -86,4 +90,48 @@ function animatePress(currentColor) {
   setTimeout(function () {
     $(`div.${currentColor}`).removeClass("pressed");
   }, 100);
+}
+
+//checks answer
+function checkAnswer(currentLevel) {
+  console.log(currentLevel);
+  //check if the most recent user answer is the same as the game pattern
+  if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
+    console.log("success");
+    //check if the user has finished their sequence
+    if (userClickedPattern.length === gamePattern.length) {
+      //call nextSequence() after 1000milliseconds
+      setTimeout(function () {
+        nextSequence();
+        //once nextSequence() is triggered set user pattern to an empty array.
+        userClickedPattern = [];
+      }, 1000);
+    }
+  } else {
+    gameOver();
+    startOver();
+  }
+}
+
+//game over
+function gameOver() {
+  $("h1").text("Game Over, Press Any Key to Restart");
+  console.log("wrong");
+  //play wrong audio if user gets pattern wrong.
+  let wrongAudio = new Audio("sounds/wrong.mp3");
+  wrongAudio.play();
+  //add class game-over to body
+  $("body").addClass("game-over");
+  //remove class
+  setTimeout(function () {
+    $("body").removeClass("game-over");
+  }, 200);
+}
+
+//restarting the game
+function startOver() {
+  level = 0;
+  gamePattern = [];
+  userClickedPattern = [];
+  firstPress = 0;
 }

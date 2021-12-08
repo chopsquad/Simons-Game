@@ -14,9 +14,6 @@ This is webpage game, based off the very popular "Simons Game" Simon`s Game is a
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -32,6 +29,7 @@ Users should be able to:
 ### Screenshot
 
 ![Simon`s Game](images/page.png)
+![End Game](images/gameovr.png)
 
 ### Links
 
@@ -55,20 +53,16 @@ Users should be able to:
 - [x] Create a function called `animatePress()` that takes in a single parameter called `currentColor`.
 - [x] Add the class `.pressed` to the button that is being clicked.
 - [x] Use javascript to removed the pressed button after 100 milliseconds.
-- [ ] Detect when the keyboards is pressed and call next `nextSequence()`
-- [ ] Keep track of when it is press and only have it run on the first press
-- [ ] Create a new variable called level and set it to 0.
-- [ ] At the start have the title say "Press A Key to Start"
-- [ ] Increase level by one every time `nextSequence` is called.
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
-- [ ] Add contents of `userChosenColour` and `userClickedPattern`
+- [x] Detect when the keyboards is pressed and call next `nextSequence()`
+- [x] Keep track of when it is press and only have it run on the first press
+- [x] Create a new variable called level and set it to 0.
+- [x] At the start have the title say "Press A Key to Start"
+- [x] Increase level by one every time `nextSequence` is called.
+- [x] New function called `checkAnswer()` that takes in an input `currentLevel`
+- [x] Call `checkAnswer()` after the user has clicked and chosen their answer, passing in the index of the last answer in the users sequence.
+- [x] If statement inside `checkAnswer()` that checks if the most recent user answer is the same as the game pattern. If it is then log "success" else log "wrong".
+- [x] Create `gameOver()` that plays the wrong sound and flashes the background red and changes h1 to "Game over, Press Any Key to Restart"
+- [x] Create a `StartOver()` that resets the game and resets the values of level, game pattern
 
 ### Built with
 
@@ -76,14 +70,9 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
--
 - [Jquery](https://code.jquery.com/) - JS library
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 -Adding jquery to out html file, must be added before the js file
 
@@ -168,10 +157,6 @@ $(document).on("keydown", function (event) {
 
 -In the above i used the variable and set it to 0 to keep track of the key press. I used a if statement to check if the key press is equal to 0 and if it is run the function and add 1 t0 first press.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
@@ -188,14 +173,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Vardan Vanyan](https://github.com/chopsquad)
