@@ -13,6 +13,18 @@ let gamePattern = [];
 // and array that holds different colors
 const buttonColours = ["red", "blue", "green", "yellow"];
 
+//keeping track of the first keyboard press.
+let firstPress = 0;
+//detecting when the keyboard has been pressed
+$(document).on("keydown", function (event) {
+  console.log(event);
+  //call nextSequence();
+  if (firstPress === 0) {
+    nextSequence();
+    firstPress++;
+  }
+});
+
 function nextSequence() {
   //generate a random number between 0 and 3
   //store random number in a variable

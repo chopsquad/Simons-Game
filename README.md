@@ -53,8 +53,16 @@ Users should be able to:
 - [x] Take the code used to ply sound and move it into `playSound`.
 - [x] Refractor the code in `playSound()` so that it will work for both in `nextSequence()` and when the user clicks a button.
 - [x] Create a function called `animatePress()` that takes in a single parameter called `currentColor`.
-- [ ] Add the class `.pressed` to the button that is being clicked.
+- [x] Add the class `.pressed` to the button that is being clicked.
 - [x] Use javascript to removed the pressed button after 100 milliseconds.
+- [ ] Detect when the keyboards is pressed and call next `nextSequence()`
+- [ ] Keep track of when it is press and only have it run on the first press
+- [ ] Create a new variable called level and set it to 0.
+- [ ] At the start have the title say "Press A Key to Start"
+- [ ] Increase level by one every time `nextSequence` is called.
+- [ ] Add contents of `userChosenColour` and `userClickedPattern`
+- [ ] Add contents of `userChosenColour` and `userClickedPattern`
+- [ ] Add contents of `userChosenColour` and `userClickedPattern`
 - [ ] Add contents of `userChosenColour` and `userClickedPattern`
 - [ ] Add contents of `userChosenColour` and `userClickedPattern`
 - [ ] Add contents of `userChosenColour` and `userClickedPattern`
@@ -140,8 +148,25 @@ function name(color) {
     //select the element again and remove the class use removeClass
     $(`div.${color}`).removeClass("name of class");
   });
-}
 ```
+
+-Checking the document to see for a key press and running the sequence when key press is found.
+
+```js
+//keeping track of the first keyboard press.
+let firstPress = 0;
+//detecting when the keyboard has been pressed
+$(document).on("keydown", function (event) {
+  console.log(event);
+  //call nextSequence();
+  if (firstPress === 0) {
+    nextSequence();
+    firstPress++;
+  }
+});
+```
+
+-In the above i used the variable and set it to 0 to keep track of the key press. I used a if statement to check if the key press is equal to 0 and if it is run the function and add 1 t0 first press.
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
